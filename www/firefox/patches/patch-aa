@@ -2,7 +2,6 @@ $NetBSD: patch-aa,v 1.64 2020/01/09 15:06:29 ryoon Exp $
 
 * Add OSS audio support
 * Add Sun audio support
-* Disable libav-fft on SunOS (relocation errors)
 * Include include/nss/nss for workaround for neqo-crypto 0.1.6 of firefox-72.0
 
 --- old-configure.in.orig	2020-01-03 18:58:03.000000000 +0000
