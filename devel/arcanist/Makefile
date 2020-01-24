@@ -43,7 +43,7 @@ INSTALLATION_DIRS+=	${ARCANISTDIR} bin
 
 do-install:
 	cd ${WRKSRC} && \
-		${PAX} -rw * -s',.*\.orig$$,,' \
+		${PAX} -rw -s ',.*\.orig$$,,' -- * \
 		${DESTDIR}${PREFIX}/${ARCANISTDIR}
 	ln -s ${PREFIX}/${ARCANISTDIR}/scripts/arcanist.php \
 		${DESTDIR}${PREFIX}/bin/arc
